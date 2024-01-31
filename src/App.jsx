@@ -1,3 +1,4 @@
+import Bar from './components/bar/Bar';
 import CardImg from './components/card-img/CardImg';
 import CardTitle from './components/card-title/CardTitle';
 import Card from './components/card/Card';
@@ -15,6 +16,7 @@ const App = () => {
 			<Text text='Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful' />
 			<MainContainer>
 				<CardsContainer>
+					<Bar class='green' />
 					<Card>
 						<CardTitle text='Supervisor' />
 						<Text
@@ -24,8 +26,9 @@ const App = () => {
 						<CardImg src='./images/icon-supervisor.svg' />
 					</Card>
 				</CardsContainer>
-				<CardsContainer>
-					<Card>
+				<CardsContainer class='bigger'>
+					<Bar class='red' />
+					<Card class='margin'>
 						<CardTitle text='Team Builder' />
 						<Text
 							text='Scans our talent network to create the optimal team for your project'
@@ -33,6 +36,7 @@ const App = () => {
 						/>
 						<CardImg src='./images/icon-team-builder.svg' />
 					</Card>
+					<Bar class='yellow' />
 					<Card>
 						<CardTitle text='Karma' />
 						<Text
@@ -43,6 +47,7 @@ const App = () => {
 					</Card>
 				</CardsContainer>
 				<CardsContainer>
+					<Bar class='blue' />
 					<Card>
 						<CardTitle text='Calculator' />
 						<Text

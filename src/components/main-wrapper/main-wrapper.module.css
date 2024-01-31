@@ -1,9 +1,17 @@
 .wrapper{
     width: 80%;
+    max-width: 1440px;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: auto;
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        height: auto;
+        margin-top: 50px;
+    }
 }
